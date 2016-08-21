@@ -5,7 +5,8 @@ var port = process.env.PORT || 8080;
 
 app.get('/:datestring', function(req, res)
 {	
-	var unixStamp = Date.parse(req.params.datestring);
+	Date date = new Date();
+	var unixStamp = date.parse(req.params.datestring);
 	res.end(unixStamp);
 });
 
