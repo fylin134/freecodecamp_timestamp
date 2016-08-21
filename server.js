@@ -4,8 +4,9 @@ var app = express();
 var port = process.env.PORT || 8080;
 
 app.get('/', function(req, res)
-{
-	res.end('hello world');
+{	
+	var path = req.path;
+	res.end(path);
 });
 
-app.listen(port);
+app.listen(8080);
