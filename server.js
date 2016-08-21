@@ -9,4 +9,4 @@ app.get('/', function(req, res)
 	res.end(path);
 });
 
-app.listen(8080);
+app.listen(port);
