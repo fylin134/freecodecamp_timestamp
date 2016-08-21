@@ -3,10 +3,10 @@ var app = express();
 
 var port = process.env.PORT || 8080;
 
-app.get('/', function(req, res)
+app.get('/:datestring', function(req, res)
 {	
-	var path = req.path;
-	res.end(req.baseUrl);
+	var date = req.params.datestring;
+	res.end(date);
 });
 
 app.listen(port);
