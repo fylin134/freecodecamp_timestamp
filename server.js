@@ -6,7 +6,7 @@ var port = process.env.PORT || 8080;
 app.get('/', function(req, res)
 {	
 	var path = req.path;
-	res.end(req.route);
+	res.end(req.baseUrl);
 });
 
 app.listen(port);
